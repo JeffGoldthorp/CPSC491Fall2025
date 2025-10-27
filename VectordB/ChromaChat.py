@@ -1,3 +1,5 @@
+# to run: python3 -m VectordB.ChromaChat --auto-ingest-externals (optional)
+
 import os
 import sys
 import logging
@@ -13,13 +15,15 @@ from bs4 import BeautifulSoup
 from uuid import uuid4
 from config import get_api_key as get_openai_key, get_serpapi_key
 
+
+
 # === Config ===
 PERSIST_PATH = os.environ.get("CHROMA_PERSIST_PATH", "./chroma_storage")
 COLLECTION_NAME = os.environ.get("CHROMA_COLLECTION", "fcc_documents")
 EMBED_MODEL = "text-embedding-3-small"
 SIMILARITY_TOP_K = 5
 MAX_RESPONSE_TOKENS = 500
-SIMILARITY_THRESHOLD = 0.85
+SIMILARITY_THRESHOLD = 0.90
 FALLBACK_TEXT = "No information available in the dataset or external sources for that question."
 DEFAULT_SEARCH_QUERIES = [
     "emergency alert systems academic research site:gov OR site:edu OR site:org -site:fcc.gov",
@@ -137,11 +141,11 @@ def build_prompt(query: str, embedded_chunks: List[Dict], external_docs: List[Di
         f"{system_instructions}\n\n"
         f"Context:\n{context_text}\n\n"
         f"Question: {query}\n"
-        f"Answer (with markdown citations under '📚 Sources:'):"
+        f"Answer (with markdown citations under 'Sources:'):"
     )
 
 def parse_sources(answer: str) -> Tuple[str, List[Tuple[str, str]]]:
-    marker = "\n📚 Sources:"
+    marker = "\n Sources:"
     if marker in answer:
         ans_part, src_part = answer.split(marker, 1)
         sources = []
@@ -205,11 +209,9 @@ def chat():
 
             print(f"\nAssistant: {ans_text}\n")
             if sources:
-                print("📚 Sources:")
+                print("Sources:")
                 for title, url in sources:
                     print(f"- [{title}]({url})")
-            else:
-                print("📚 Sources: None cited.")
 
         except KeyboardInterrupt:
             print("\nGoodbye!")
