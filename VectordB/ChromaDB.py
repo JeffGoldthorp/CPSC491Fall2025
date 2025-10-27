@@ -58,7 +58,7 @@ logger = logging.getLogger(__name__)
 
 OPENAI_CLIENT = None
 EMBED_MODEL = "text-embedding-3-small"
-SIMILARITY_THRESHOLD = 0.85
+SIMILARITY_THRESHOLD = 0.90
 SIMILARITY_TOP_K = 5
 MIN_ARTICLE_LENGTH = 300
 CHUNK_SIZE = 2000
