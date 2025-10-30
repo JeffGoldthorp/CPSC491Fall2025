@@ -1,6 +1,10 @@
-# Virtual environments
+# Virtual environments (both .venv and venv naming conventions)
 .venv
+.venv/
 venv/
+env/
+
+# Environment files
 .env
 
 # Python cache

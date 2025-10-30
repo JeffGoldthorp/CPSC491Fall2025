@@ -89,7 +89,7 @@ git push -u origin main
 
 ### Configuration
 - ✅ **.gitignore** - Properly configured to exclude:
-  - Virtual environments (.venv, venv/)
+  - Virtual environments (.venv, .venv/, venv/, env/)
   - Environment files (.env)
   - Python cache (__pycache__, *.pyc)
   - ChromaDB storage (chroma_fcc_storage/)
@@ -102,7 +102,7 @@ These files are excluded via .gitignore and should remain local:
 - ❌ `.env` - Contains your API keys (create new in destination)
 - ❌ `chroma_fcc_storage/` - Local ChromaDB data (will be regenerated)
 - ❌ `__pycache__/` - Python cache (auto-generated)
-- ❌ `.venv/` or `venv/` - Virtual environment (create new with `pip install -r requirements.txt`)
+- ❌ `.venv/`, `venv/`, or `env/` - Virtual environment directories (create new with `pip install -r requirements.txt`)
 
 ## After Migration: Setup Steps
 
