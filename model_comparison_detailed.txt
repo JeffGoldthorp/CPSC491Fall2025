@@ -1,0 +1,572 @@
+====================================================================================================
+MODEL COMPARISON REPORT: Fine-tuned Model vs GPT-4o-mini
+====================================================================================================
+
+📈 SUMMARY STATISTICS
+----------------------------------------------------------------------------------------------------
+
+1️⃣ RELEVANCE TO EMERGENCY ALERTING SYSTEMS (higher is better):
+  Fine-tuned Model: 0.5527
+  Base GPT-4o-mini: 0.5512
+  Winner: Fine-tuned ✅ (+0.0014)
+
+2️⃣ QUESTION DIRECTNESS (how directly it answers the question):
+  Fine-tuned Model: 0.7770
+  Base GPT-4o-mini: 0.7984
+  Winner: Base ✅ (+0.0215)
+
+3️⃣ SPECIFICITY (names, dates, numbers, citations - higher indicates more detail):
+  Fine-tuned Model: 68.0 specific items per response
+  Base GPT-4o-mini: 56.5 specific items per response
+  Winner: Fine-tuned ✅ (+11.5)
+
+4️⃣ SOURCE CITATION (responses with sources/references):
+  Fine-tuned Model: 3/6 (50.0%)
+  Base GPT-4o-mini: 1/6 (16.7%)
+  Winner: Fine-tuned ✅
+
+5️⃣ HALLUCINATION RISK (lower is better - based on specificity without sources):
+  Fine-tuned Model: 1.50
+  Base GPT-4o-mini: 2.50
+  Winner: Fine-tuned ✅ (Δ1.00)
+
+6️⃣ RESPONSE LENGTH (characters):
+  Fine-tuned Model: 2691
+  Base GPT-4o-mini: 2764
+  Difference: 73 chars (Base more verbose)
+
+7️⃣ RESPONSE SIMILARITY (how similar the responses are to each other):
+  Average: 0.8887
+  Interpretation: Very similar
+
+
+====================================================================================================
+📋 DETAILED QUESTION-BY-QUESTION COMPARISON
+====================================================================================================
+
+
+====================================================================================================
+QUESTION 1
+====================================================================================================
+
+❓ Who are the key thought leaders in emergency alerting reliability, excluding those identified by the FCC?
+
+----------------------------------------------------------------------------------------------------
+🤖 FINE-TUNED MODEL RESPONSE:
+----------------------------------------------------------------------------------------------------
+In the realm of emergency alerting reliability, several thought leaders and organizations contribute significantly to the discourse and development of best practices, technologies, and frameworks. Here are some key figures and organizations, excluding those identified by the FCC:
+
+1. **Dr. David Mileti** - A prominent figure in the field of emergency management and communication, Dr. Mileti has authored numerous studies on public warning systems and the social science aspects of emergency alerts. His work emphasizes the importance of effective communication in disaster scenarios and the psychological factors influencing public response to alerts.
+
+2. **Jeannette Sutton** - An associate professor at the University at Albany, SUNY, Dr. Sutton is a recognized expert in emergency alerts and public communication during crises. Her research focuses on the effectiveness of warning systems and the social dynamics of public response to alerts.
+
+3. **Brian Toolan** - As the Vice President of Global Public Safety at Everbridge, Toolan plays a crucial role in developing alerting software that enhances public safety communications. Everbridge is known for its comprehensive emergency notification solutions that integrate various communication channels.
+
+4. **Kay Chiodo** - The CEO of Deaf Link, Chiodo advocates for accessibility in emergency communications, ensuring that alerts are inclusive for individuals with hearing impairments. Her work is vital in addressing the needs of access and functional needs (AFN) populations during emergencies.
+
+5. **Glenn Shell** - COO of Deaf Link, Shell collaborates with various organizations to improve the delivery of emergency alerts to diverse communities, focusing on accessibility and effective communication strategies.
+
+6. **Salimah LaForce** - A research scientist at the Center for Advanced Communications Policy at Georgia Institute of Technology, LaForce's work involves analyzing communication technologies and their application in emergency management, particularly in enhancing the reliability of alert systems.
+
+7. **Center for Naval Analyses (CNA)** - This organization conducts research on best practices in crisis communications for state and local emergency management agencies. Their reports and guidelines are influential in shaping policies around emergency alert systems.
+
+8. **National Oceanic and Atmospheric Administration (NOAA)** - NOAA plays a critical role in weather-related alerts and warnings. Their research and operational capabilities significantly enhance the reliability and effectiveness of emergency alerts related to natural disasters.
+
+9. **International Association of Emergency Managers (IAEM)** - IAEM is a professional organization that provides resources, training, and advocacy for emergency management professionals. Their guidelines and best practices contribute to the reliability of emergency alert systems.
+
+----------------------------------------------------------------------------------------------------
+💬 BASE GPT-4o-mini RESPONSE:
+----------------------------------------------------------------------------------------------------
+In the field of emergency alerting and related systems, several key thought leaders and organizations contribute to the conversation on reliability and best practices, aside from those identified by the FCC. Here are some of them:
+
+1. **Emergency Management Professionals**: Individuals such as state emergency management directors, local emergency managers, and directors of emergency services often lead initiatives in improving alert systems and their reliability.
+
+2. **International Association of Emergency Managers (IAEM)**: This organization comprises professionals dedicated to the field of emergency management and often discusses best practices for alerting systems.
+
+3. **National Emergency Management Agency (NEMA)**: Various leaders within NEMA and similar organizations focus on effective communication strategies during emergencies.
+
+4. **Federal Emergency Management Agency (FEMA)**: While part of the federal government, FEMA's leaders and their initiatives around the Integrated Public Alert and Warning System (IPAWS) are crucial for improving alert reliability.
+
+5. **National Oceanic and Atmospheric Administration (NOAA)**: NOAA, particularly the National Weather Service (NWS), plays a vital role in weather-related alerts and has thought leaders focusing on improving the accuracy and reliability of these alerts.
+
+6. **National Association of Broadcasters (NAB)**: NAB works with broadcasters to ensure that EAS and related systems are reliable and effective.
+
+7. **Public Safety Communications Research (PSCR) Program**: This program, part of the National Institute of Standards and Technology (NIST), conducts research on emergency communications, which informs best practices.
+
+8. **Academic Institutions**: Researchers and professors in emergency management, public safety communications, and related fields contribute to the body of knowledge on alert reliability. Institutions like the University of Colorado, the University of North Texas, and others have dedicated programs in emergency management.
+
+9. **Nonprofit Organizations**: Groups like the National Safety Council (NSC) and the International Association for Counterterrorism and Security Professionals (IACSP) focus on alerting and safety issues from a broader perspective.
+
+10. **Technology and Communication Experts**: Professionals in the tech industry who develop alert systems, such as those from software companies focused on public safety communication, contribute to discussions on reliability and innovation in alert systems.
+
+These individuals and organizations play significant roles in advancing the effectiveness and reliability of emergency alerting systems through research, policy development, and community engagement.
+
+----------------------------------------------------------------------------------------------------
+📊 COMPARATIVE METRICS:
+----------------------------------------------------------------------------------------------------
+
+RELEVANCE TO EMERGENCY SYSTEMS:
+  Fine-tuned: 0.5650
+  Base:       0.5387
+  Winner:     Fine-tuned ✅
+
+QUESTION DIRECTNESS:
+  Fine-tuned: 0.7785
+  Base:       0.8166
+  Winner:     Base ✅
+
+SPECIFICITY BREAKDOWN:
+  Fine-tuned: 60 items (Years: 0, Numbers: 9, Proper nouns: 51, URLs: 0)
+  Base:       73 items (Years: 0, Numbers: 10, Proper nouns: 63, URLs: 0)
+  Winner:     Base ✅
+
+HALLUCINATION RISK ANALYSIS:
+  Fine-tuned: Risk=High (3), Sources=No ❌, Hedging=0
+  Base:       Risk=High (3), Sources=No ❌, Hedging=2
+  Winner:     Base ✅ (lower risk wins)
+
+RESPONSE LENGTH:
+  Fine-tuned: 2907 chars
+  Base:       2727 chars
+  Difference: 180 chars
+
+RESPONSE SIMILARITY: 0.9017
+
+
+====================================================================================================
+QUESTION 2
+====================================================================================================
+
+❓ What academic researchers or industry experts have made notable contributions to emergency alerting securitty?
+
+----------------------------------------------------------------------------------------------------
+🤖 FINE-TUNED MODEL RESPONSE:
+----------------------------------------------------------------------------------------------------
+Several academic researchers and industry experts have made significant contributions to the field of emergency alerting security, particularly in the context of enhancing the effectiveness and reliability of systems like the Emergency Alert System (EAS), Wireless Emergency Alerts (WEA), and the Integrated Public Alert and Warning System (IPAWS). Here are some notable figures and their contributions:
+
+1. **Jeannette Sutton**: A senior research associate at the Trauma, Health and Hazards Center, Sutton has been involved in various research projects aimed at improving emergency communication. Notably, she was part of a team awarded nearly $1 million by the U.S. Department of Homeland Security to study the effectiveness of emergency text message alerts. This project focused on designing and testing prototype messages intended to prompt public action during imminent threats (UCCS, 2012). 
+
+2. **Dennis Mileti**: A prominent figure in the study of disaster communication, Mileti has authored several influential works on how public warnings are communicated. His research emphasizes the importance of message clarity and the social science aspects of how people respond to alerts, which is critical for improving alerting systems (Mileti & Sorensen, 1990).    
+
+3. **Hamilton Bean**: In collaboration with Sutton and others, Bean has researched the impact of wireless emergency alerts on public behavior, particularly during crises like the COVID-19 pandemic. His work has contributed to understanding how alerts can influence compliance with public health measures (Bean et al., 2022).
+
+4. **Michele Wood**: Wood has worked alongside Sutton and Mileti on various projects that assess the effectiveness of emergency alerts. Her research often focuses on the usability and public perception of alert systems, which is vital for ensuring that alerts are received and acted upon appropriately.
+
+5. **Brooke Fisher Liu**: Liu's research includes examining how different populations perceive and respond to emergency alerts. Her work is essential for developing strategies that ensure alerts are accessible and actionable for diverse communities.
+
+6. **Daniels Scriven**: As the Director of the Office of New Americans, Scriven has contributed to discussions on how emergency alerts can be made more inclusive, particularly for non-English speaking populations. His advocacy for equitable access to information is crucial for improving public safety communications.
+
+7. **Brian Toolan**: As Vice President of Global Public Safety at Everbridge, Toolan has been involved in developing alerting software that enhances the delivery and effectiveness of emergency messages. His work focuses on integrating technology with public safety
+
+----------------------------------------------------------------------------------------------------
+💬 BASE GPT-4o-mini RESPONSE:
+----------------------------------------------------------------------------------------------------
+Several academic researchers and industry experts have made significant contributions to the field of emergency alerting security, particularly in the areas of Emergency Alert System (EAS), Wireless Emergency Alerts (WEA), and Integrated Public Alert and Warning System (IPAWS). Here are some notable figures and their contributions:
+
+1. **Dr. David McEntire** - A prominent researcher in disaster management and emergency preparedness, Dr. McEntire has published extensively on the effectiveness of emergency communication systems, including EAS and IPAWS.
+
+2. **Dr. A. J. (Aidan) O’Connor** - Known for his work in public safety communications, Dr. O’Connor has conducted research on the security and reliability of alerting systems, focusing on how technology can improve emergency responses.
+
+3. **Dr. Patricia L. T. H. (Pat) Dyer** - Dr. Dyer’s research includes examining the social and psychological impacts of emergency alerts, contributing to the understanding of how alerts are perceived and acted upon by the public.
+
+4. **Dr. John L. (Jack) McCarty** - His work on the integration of technology in emergency management has included studying the security vulnerabilities of alert systems and proposing methods to enhance their resilience.
+
+5. **Dr. Michael J. O’Rourke** - An expert in information security, Dr. O'Rourke has investigated the cybersecurity aspects of emergency alert systems, focusing on how to protect them from malicious attacks.
+
+6. **Dr. Elizabeth A. (Liz) Tatum** - Her research has addressed the challenges of ensuring that emergency alerts reach diverse populations, including vulnerable and marginalized groups, while maintaining the integrity of the alerting process.
+
+7. **Dr. Amy L. K. (Kelley) Dyer** - Dr. Dyer has examined the role of social media and mobile technology in emergency alerts, exploring how these platforms can be utilized effectively and securely in crisis situations.
+
+In addition to academic researchers, various organizations and government agencies also contribute to the security of emergency alerting systems:
+
+- **Federal Emergency Management Agency (FEMA)** - FEMA plays a key role in the development and implementation of EAS and IPAWS, focusing on improving the security and reliability of these systems.
+
+- **National Oceanic and Atmospheric Administration (NOAA)** - NOAA's National Weather Service is responsible for weather-related alerts and has worked on enhancing the accuracy and security of these alerts.
+
+- **Public Safety Communications Research (PSCR) Division** - Part of the National Institute of Standards and Technology (NIST), PSCR conducts research on communication technologies that can improve the security and effectiveness of emergency alerts.
+
+These individuals and organizations represent a small selection of the many contributors to the field of emergency alerting security, highlighting the interdisciplinary nature of this vital area of research and practice.
+
+----------------------------------------------------------------------------------------------------
+📊 COMPARATIVE METRICS:
+----------------------------------------------------------------------------------------------------
+
+RELEVANCE TO EMERGENCY SYSTEMS:
+  Fine-tuned: 0.5128
+  Base:       0.5360
+  Winner:     Base ✅
+
+QUESTION DIRECTNESS:
+  Fine-tuned: 0.7972
+  Base:       0.8154
+  Winner:     Base ✅
+
+SPECIFICITY BREAKDOWN:
+  Fine-tuned: 68 items (Years: 3, Numbers: 12, Proper nouns: 53, URLs: 0)
+  Base:       64 items (Years: 0, Numbers: 7, Proper nouns: 57, URLs: 0)
+  Winner:     Fine-tuned ✅
+
+HALLUCINATION RISK ANALYSIS:
+  Fine-tuned: Risk=High (3), Sources=No ❌, Hedging=1
+  Base:       Risk=High (3), Sources=No ❌, Hedging=0
+  Winner:     Base ✅ (lower risk wins)
+
+RESPONSE LENGTH:
+  Fine-tuned: 2734 chars
+  Base:       2953 chars
+  Difference: 219 chars
+
+RESPONSE SIMILARITY: 0.8721
+
+
+====================================================================================================
+QUESTION 3
+====================================================================================================
+
+❓ What academic researchers or industry experts have made notable contributions to emergency alerting reliabiility?
+
+----------------------------------------------------------------------------------------------------
+🤖 FINE-TUNED MODEL RESPONSE:
+----------------------------------------------------------------------------------------------------
+Several academic researchers and industry experts have made significant contributions to the reliability of emergency alerting systems, particularly in the context of the Emergency Alert System (EAS), Wireless Emergency Alerts (WEA), and the Integrated Public Alert and Warning System (IPAWS). Here are some notable contributors:
+
+1. **David Mileti**: A prominent figure in the field of emergency management and communication, Mileti has extensively researched the social science aspects of public warnings. His work, particularly the report "Communication of Emergency Public Warnings: A Social Science Perspective and State-of-the-Art Assessment" (1990), emphasizes the importance of understanding human behavior in response to alerts. His insights into "milling" behavior—where individuals delay taking action after receiving an alert—have been crucial in shaping effective communication strategies.
+
+2. **J. David Sorensen**: Alongside Mileti, Sorensen has contributed to the understanding of how people interpret and respond to emergency alerts. Their joint research has informed best practices for alert composition and dissemination, ensuring that messages are clear and actionable.
+
+3. **Jennifer Sutton**: A researcher who has focused on the effectiveness of Wireless Emergency Alerts (WEA), Sutton's work has examined how over-alerting can lead to warning fatigue among the public. Her studies, including "Opting Out: Over-Alerting and Warning Fatigue in the Era of Wireless Emergency Alerts" (2025), highlight the need for a balance in alert frequency to maintain public responsiveness.
+
+4. **Marcia Testa**: As a co-director of the Emergency Preparedness Research, Evaluation & Practice (EPREP) Program at Harvard T.H. Chan School of Public Health, Testa has been involved in research that addresses communication challenges during public health emergencies. Her work emphasizes the importance of timely and transparent communication, particularly in the context of misinformation during crises like the COVID-19 pandemic.
+
+5. **The National Academies of Sciences, Engineering, and Medicine**: This organization has conducted various studies on emergency alert systems, including the report "The Future of Emergency Alert and Warning Systems," which reviews past research and suggests new directions for improving alert systems.
+
+6. **The Communications Security, Reliability, and Interoperability Council (CSRIC)**: This FCC advisory committee has produced reports, including the CSRIC VI WG2 Final Report (2018), which outlines recommendations for improving the interoperability and reliability of emergency alert systems. The report emphasizes the need for collaboration among stakeholders and the integration of new technologies
+
+----------------------------------------------------------------------------------------------------
+💬 BASE GPT-4o-mini RESPONSE:
+----------------------------------------------------------------------------------------------------
+There are several academic researchers and industry experts who have made significant contributions to the field of emergency alerting systems and their reliability. While I cannot provide real-time updates or the names of the latest contributors beyond my last training cut-off in October 2023, here are some notable figures and areas of research that have historically been influential:
+
+1. **Dr. David A. McCarthy** - Known for his work on the effectiveness and reliability of emergency alert systems, particularly in the context of public safety communication.
+
+2. **Dr. Brian M. F. Duffy** - Focused on the design and implementation of emergency alert systems, including aspects related to user interaction and public response.
+
+3. **Dr. Barbara A. Kasky** - Researched the social and psychological impacts of emergency alerts, exploring how public perception affects the reliability of such systems.
+
+4. **Dr. Robert E. Lee** - Contributed to the technical aspects of emergency alert systems, including the integration of various communication technologies to enhance reliability.
+
+5. **The National Oceanic and Atmospheric Administration (NOAA)** - Although not an individual, NOAA has played a crucial role in developing and improving weather-related emergency alerts, influencing the reliability of such systems nationwide.
+
+6. **Federal Emergency Management Agency (FEMA)** - FEMA has been instrumental in research and development of standards and practices for alerting systems, including the Integrated Public Alert and Warning System (IPAWS).
+
+7. **Public Safety Communications Research (PSCR) Program** - This program has conducted various studies on the reliability of emergency communication systems, focusing on improving technology and protocols.
+
+8. **International Telecommunication Union (ITU)** - Engages in research and policy development related to emergency telecommunications, contributing to global standards for alert systems.
+
+For current and specific contributions, one could look into recent publications in journals like the "Journal of Emergency Management," or conference proceedings from organizations such as the International Association of Emergency Managers (IAEM) or the National Emergency Management Agency (NEMA). Additionally, researchers often collaborate across disciplines, including communication studies, public health, and information technology, to enhance the effectiveness and reliability of emergency alert systems.
+
+----------------------------------------------------------------------------------------------------
+📊 COMPARATIVE METRICS:
+----------------------------------------------------------------------------------------------------
+
+RELEVANCE TO EMERGENCY SYSTEMS:
+  Fine-tuned: 0.5562
+  Base:       0.5225
+  Winner:     Fine-tuned ✅
+
+QUESTION DIRECTNESS:
+  Fine-tuned: 0.7969
+  Base:       0.8124
+  Winner:     Base ✅
+
+SPECIFICITY BREAKDOWN:
+  Fine-tuned: 92 items (Years: 3, Numbers: 10, Proper nouns: 79, URLs: 0)
+  Base:       53 items (Years: 1, Numbers: 9, Proper nouns: 43, URLs: 0)
+  Winner:     Fine-tuned ✅
+
+HALLUCINATION RISK ANALYSIS:
+  Fine-tuned: Risk=High (3), Sources=No ❌, Hedging=0
+  Base:       Risk=High (3), Sources=No ❌, Hedging=2
+  Winner:     Base ✅ (lower risk wins)
+
+RESPONSE LENGTH:
+  Fine-tuned: 2744 chars
+  Base:       2468 chars
+  Difference: 276 chars
+
+RESPONSE SIMILARITY: 0.8719
+
+
+====================================================================================================
+QUESTION 4
+====================================================================================================
+
+❓ What are some major recent lapses in emergency alerting reliability, based on sources outside the FCC?
+
+----------------------------------------------------------------------------------------------------
+🤖 FINE-TUNED MODEL RESPONSE:
+----------------------------------------------------------------------------------------------------
+Recent lapses in emergency alerting reliability have highlighted significant challenges within the existing systems, particularly in the context of natural disasters and other emergencies. Here are some notable incidents and findings based on various sources:
+
+1. **Hurricane Katrina (2005)**: This event underscored the vulnerabilities in the emergency alerting infrastructure. According to the Government Accountability Office (GAO), during Hurricane Katrina, approximately 100 broadcast stations were unable to transmit, and millions of telephone lines were knocked out of service. This incident revealed the inadequacies of the Emergency Alert System (EAS) in effectively warning the public about disasters and providing timely information on how to respond ([GAO-07-411](https://www.gao.gov/assets/a258504.html)).
+
+2. **California Wildfires (2020)**: The wildfires in California raised concerns about the effectiveness of the Wireless Emergency Alerts (WEA) system. Many residents reported not receiving alerts in a timely manner, or at all, despite being in the affected areas. This led to criticism regarding the system's ability to geo-target alerts effectively, which is crucial during rapidly evolving situations like wildfires ([The Verge, 2023](https://www.theverge.com/2023/4/21/23691784/elon-musk-twitter-disaster-alert-accounts-fire-storm-tsunami-earthquake)).
+
+3. **False Alerts**: There have been instances of false alerts that caused panic among the public. For example, in January 2018, a false missile alert was sent to residents of Hawaii, which took 38 minutes to correct. This incident highlighted the need for better verification processes and security measures within alert systems to prevent unauthorized or erroneous alerts ([GAO-07-411](https://www.gao.gov/assets/a258504.html)).
+
+4. **Social Media and Third-Party Applications**: The rise of social media as an emergency communication tool has introduced both opportunities and challenges. While platforms like Twitter can disseminate information quickly, they also lack the regulatory oversight that traditional systems like EAS and WEA have. This can lead to misinformation and confusion during emergencies, as seen in various studies that indicate people often seek additional information online rather than acting immediately on alerts ([Csric6 Wg2Dec18Finalreportalerting](URL: Unknown)).
+
+5. **Technical Limitations**: The current EAS was not designed to alert the public via devices other than radios or televisions. This limitation became
+
+----------------------------------------------------------------------------------------------------
+💬 BASE GPT-4o-mini RESPONSE:
+----------------------------------------------------------------------------------------------------
+While the Federal Communications Commission (FCC) oversees many aspects of emergency alerting systems, there have been several notable lapses in emergency alerting reliability that have been reported by various media and governmental sources outside of the FCC. Here are some examples:
+
+1. **Hawaii False Missile Alert (2018)**: One of the most significant lapses occurred when an emergency alert mistakenly warned residents of an incoming ballistic missile. The alert was sent in January 2018 due to human error during a drill, leading to widespread panic. It took approximately 38 minutes for officials to issue a correction.
+
+2. **California Tsunami Warning System (2021)**: In March 2021, a tsunami advisory was issued following an earthquake off the coast of Japan. However, some regions in California received alerts that were either delayed or not sent at all, leading to confusion and potential risks for residents. This raised concerns about the state's emergency alert system's readiness for real-time events.
+
+3. **Florida Hurricane Warnings (2021)**: During Hurricane Elsa, some residents reported not receiving timely alerts about the storm's path and severity. This lapse highlighted issues with the integration of various alert systems, including the Wireless Emergency Alerts (WEA) and local alerting mechanisms.
+
+4. **Severe Weather Alerts in the Midwest (2021)**: Reports from several states in the Midwest indicated that residents did not receive timely alerts for severe thunderstorms and tornado warnings. This raised questions about the effectiveness of the National Weather Service's communication and the capability of local systems to disseminate alerts promptly.
+
+5. **Texas Winter Storm Alerts (2021)**: During the severe winter storms in Texas, some residents reported that they did not receive adequate alerts regarding potential power outages, road conditions, and emergency resources. This highlighted gaps in communication and preparedness for such extreme weather events.
+
+6. **Wireless Emergency Alerts (WEA) Limitations**: Various sources have pointed out that the WEA system has limitations regarding character count and content specificity, which can lead to confusion or a lack of essential details during emergencies. This was particularly noted in multiple instances where alerts were sent but did not convey the necessary information effectively.
+
+These incidents underscore the ongoing challenges in ensuring timely and reliable emergency alerts, reflecting the need for continual improvements in technology, training, and public awareness.
+
+----------------------------------------------------------------------------------------------------
+📊 COMPARATIVE METRICS:
+----------------------------------------------------------------------------------------------------
+
+RELEVANCE TO EMERGENCY SYSTEMS:
+  Fine-tuned: 0.5796
+  Base:       0.5852
+  Winner:     Base ✅
+
+QUESTION DIRECTNESS:
+  Fine-tuned: 0.7565
+  Base:       0.7702
+  Winner:     Base ✅
+
+SPECIFICITY BREAKDOWN:
+  Fine-tuned: 60 items (Years: 5, Numbers: 19, Proper nouns: 33, URLs: 3)
+  Base:       63 items (Years: 7, Numbers: 14, Proper nouns: 42, URLs: 0)
+  Winner:     Base ✅
+
+HALLUCINATION RISK ANALYSIS:
+  Fine-tuned: Risk=Low (0), Sources=Yes ✅, Hedging=1
+  Base:       Risk=Low (0), Sources=Yes ✅, Hedging=0
+  Winner:     Base ✅ (lower risk wins)
+
+RESPONSE LENGTH:
+  Fine-tuned: 2525 chars
+  Base:       2582 chars
+  Difference: 57 chars
+
+RESPONSE SIMILARITY: 0.8752
+
+
+====================================================================================================
+QUESTION 5
+====================================================================================================
+
+❓ What are the economic and societal impacts of recent lapses in emergency alerting security, as reported by  independent analysts?
+
+----------------------------------------------------------------------------------------------------
+🤖 FINE-TUNED MODEL RESPONSE:
+----------------------------------------------------------------------------------------------------
+Recent lapses in emergency alerting security have significant economic and societal impacts, as highlighted by various independent analyses and reports. These lapses often stem from issues related to the Emergency Alert System (EAS), Wireless Emergency Alerts (WEA), and the Integrated Public Alert and Warning System (IPAWS).
+
+### Economic Impacts
+
+1. **Cost of False Alerts**: The economic ramifications of false alerts can be substantial. For instance, the false missile alert in Hawaii on January 13, 2018, which caused widespread panic, resulted in a reported cost of over $100,000 in response efforts, including emergency services and public communications. This incident underscored the financial burden that can arise from lapses in alerting systems (Park et al., 2018).
+
+2. **Operational Inefficiencies**: According to the Government Accountability Office (GAO), the existing emergency alert systems have limitations that can lead to inefficiencies in response operations. For example, during Hurricane Katrina, approximately 100 broadcast stations were unable to transmit, resulting in significant operational disruptions and increased costs for emergency management (GAO-07-411).
+
+3. **Increased Insurance Premiums**: Frequent false alerts or lapses in effective communication can lead to increased insurance premiums for municipalities and businesses, as they may be deemed higher risk due to inadequate emergency response capabilities.
+
+4. **Long-term Economic Burden**: The average cost of a data breach is reported to be around $3.5 million, which can be exacerbated by delays in response due to alert fatigue or misinformation. This financial strain can hinder local economies, especially in areas that rely heavily on tourism or public safety (Ponemon Institute, 2024).
+
+### Societal Impacts
+
+1. **Public Trust Erosion**: Repeated lapses in emergency alert systems can lead to a significant erosion of public trust in these systems. According to a study by Sutton and Wood (2025), over-alerting and misinformation can result in "alert fatigue," where individuals become desensitized to alerts and may ignore them during real emergencies. This phenomenon can have dire consequences, as it may lead to delayed protective actions during actual threats.
+
+2. **Psychological Effects**: The psychological impact of false alerts can be profound. The Hawaii missile alert incident, for example, caused widespread panic and anxiety among residents, leading to a long-term distrust in emergency communication systems (Park et al., 2018). This can result in
+
+----------------------------------------------------------------------------------------------------
+💬 BASE GPT-4o-mini RESPONSE:
+----------------------------------------------------------------------------------------------------
+Recent lapses in emergency alerting security can have significant economic and societal impacts, as highlighted by independent analysts. Here are some key impacts:
+
+### Economic Impacts:
+
+1. **Cost of Recovery**:
+   - Emergency alerts that are falsified or mishandled can lead to costly responses from emergency services. Resources may be wasted on unnecessary evacuations or precautionary measures that were based on false information.
+
+2. **Insurance Claims**:
+   - False alerts can lead to increased insurance claims, particularly in regions prone to natural disasters. This can raise premiums for residents and businesses, impacting overall economic stability.
+
+3. **Public Trust and Compliance**:
+   - If individuals begin to distrust emergency alerts due to lapses in security, they may not respond appropriately to legitimate alerts in the future, leading to greater economic losses during actual emergencies.
+
+4. **Infrastructure Costs**:
+   - Upgrading and securing emergency alert systems requires financial investment. Governments may face budgetary constraints that limit their ability to enhance these systems, potentially leading to increased vulnerability over time.
+
+### Societal Impacts:
+
+1. **Public Safety and Panic**:
+   - False alerts can lead to panic and chaos, as people may react impulsively to perceived threats. This can result in injuries, accidents, and even fatalities during evacuations or other emergency responses.
+
+2. **Mental Health Effects**:
+   - Repeated exposure to false alarms can lead to anxiety and stress among the population, impacting mental health. Communities may experience a general sense of unease or fear regarding future emergencies.
+
+3. **Community Cohesion**:
+   - Trust in government and institutions can be eroded if emergency alert systems are compromised. This can weaken community bonds and lead to a lack of cooperation during real emergencies.
+
+4. **Disruption of Daily Life**:
+   - Frequent false alarms can disrupt daily activities, leading to lost productivity and economic downturns in affected areas. Businesses may experience interruptions, and public services can become overwhelmed.
+
+5. **Impact on Vulnerable Populations**:
+   - Vulnerable populations, such as the elderly or those with disabilities, may be disproportionately affected by lapses in alerting systems, as they may rely more heavily on these alerts for safety information.
+
+### Conclusion:
+
+In summary, lapses in emergency alerting security can lead to significant economic burdens and societal challenges. These impacts highlight the necessity for robust security measures and regular audits of emergency alert systems to maintain public trust and ensure effective responses during genuine threats. Addressing these vulnerabilities is essential for safeguarding communities and minimizing potential negative consequences.
+
+----------------------------------------------------------------------------------------------------
+📊 COMPARATIVE METRICS:
+----------------------------------------------------------------------------------------------------
+
+RELEVANCE TO EMERGENCY SYSTEMS:
+  Fine-tuned: 0.5091
+  Base:       0.5286
+  Winner:     Base ✅
+
+QUESTION DIRECTNESS:
+  Fine-tuned: 0.7626
+  Base:       0.7791
+  Winner:     Base ✅
+
+SPECIFICITY BREAKDOWN:
+  Fine-tuned: 65 items (Years: 5, Numbers: 18, Proper nouns: 42, URLs: 0)
+  Base:       38 items (Years: 0, Numbers: 9, Proper nouns: 29, URLs: 0)
+  Winner:     Fine-tuned ✅
+
+HALLUCINATION RISK ANALYSIS:
+  Fine-tuned: Risk=Low (0), Sources=Yes ✅, Hedging=4
+  Base:       Risk=High (3), Sources=No ❌, Hedging=8
+  Winner:     Fine-tuned ✅ (lower risk wins)
+
+RESPONSE LENGTH:
+  Fine-tuned: 2563 chars
+  Base:       2857 chars
+  Difference: 294 chars
+
+RESPONSE SIMILARITY: 0.8999
+
+
+====================================================================================================
+QUESTION 6
+====================================================================================================
+
+❓ What are some examples of recent security breaches or vulnerabilities in emergency alerting systems, and hoow were they exploited?
+
+----------------------------------------------------------------------------------------------------
+🤖 FINE-TUNED MODEL RESPONSE:
+----------------------------------------------------------------------------------------------------
+Recent security breaches and vulnerabilities in emergency alerting systems highlight the critical need for robust cybersecurity measures in public safety communications. Here are some notable examples:
+
+1. **Emergency Alert System (EAS) Vulnerabilities**:
+   - In 2021, a vulnerability was identified in the EAS that allowed unauthorized individuals to send false alerts. This was due to inadequate access controls and the use of default credentials by some local authorities. The Federal Communications Commission (FCC) issued a warning about the risks associated with these vulnerabilities, emphasizing the need for strict adherence to security protocols outlined in FCC Part 11, which governs the EAS. According to the FCC, "the security of the EAS is paramount to maintaining public trust and ensuring effective communication during emergencies" (FCC, 2021).
+
+2. **Wireless Emergency Alerts (WEA) Exploitation**:
+   - In 2020, a series of incidents involved the misuse of WEA systems, where unauthorized alerts were sent out, causing public panic. These incidents were primarily attributed to social engineering attacks targeting personnel responsible for sending alerts. Attackers exploited weak authentication practices, gaining access to systems that allowed them to issue alerts without proper authorization. The FCC has since mandated stronger authentication measures for WEA users to prevent such occurrences (FCC, 2020).
+
+3. **Cyberattacks on Integrated Public Alert and Warning System (IPAWS)**:
+   - In 2023, a cyberattack targeted IPAWS, which integrates various alerting systems, including EAS and WEA. The attackers exploited a vulnerability in the software used by local authorities to manage alerts. This breach allowed them to intercept and potentially alter messages before they were sent to the public. The incident underscored the importance of maintaining up-to-date software and conducting regular security assessments as recommended by the Cybersecurity and Infrastructure Security Agency (CISA) (CISA, 2023).
+
+4. **Third-Party Vendor Breaches**:
+   - Many emergency management agencies rely on third-party vendors for alerting services. In 2024, a breach at a vendor that provided alerting services to multiple jurisdictions exposed sensitive data and led to unauthorized access to alerting systems. This incident highlighted the risks associated with third-party dependencies and the need for comprehensive vendor risk management strategies. As noted in the "Public Safety Communications Best Practices" report, "organizations must ensure that their vendors adhere to the same security standards they follow" (Public Safety Communications, 2019).
+
+----------------------------------------------------------------------------------------------------
+💬 BASE GPT-4o-mini RESPONSE:
+----------------------------------------------------------------------------------------------------
+Emergency alerting systems are critical for public safety, but they can be vulnerable to various forms of security breaches and exploitation. Here are some notable examples:
+
+1. **Hawaii Missile Alert (2018)**:
+   - **Incident**: An employee mistakenly sent out an emergency alert about an incoming ballistic missile, which turned out to be a false alarm. The alert caused widespread panic.
+   - **Exploitation**: While not a traditional security breach, the incident highlighted vulnerabilities in training and protocol. The employee had reportedly failed to follow procedures during a drill. This incident led to a review of training and communication protocols within the Hawaii Emergency Management Agency.
+
+2. **Emergency Alert System (EAS) Breaches**:
+   - **Incident**: In multiple cases, hackers have exploited vulnerabilities in the EAS. For example, in 2013, hackers accessed the EAS in a small town in Montana and broadcast a false alert about zombies taking over.
+   - **Exploitation**: Hackers gained unauthorized access to the system due to poor security practices, such as using default passwords. This incident raised awareness about the need for stronger cybersecurity measures in emergency alert systems.
+
+3. **Wireless Emergency Alerts (WEA) Vulnerabilities**:
+   - **Incident**: In 2018, researchers demonstrated that they could exploit weaknesses in the WEA system, which is used to send alerts via mobile phones. They showed that it was possible to spoof alerts by sending messages that appeared to come from legitimate sources.
+   - **Exploitation**: The attack was possible due to a lack of authentication for the messages sent through the WEA system. This vulnerability can potentially allow malicious actors to send false alerts, creating confusion and panic.
+
+4. **Ransomware Attacks**:
+   - **Incident**: Ransomware attacks on municipal governments have sometimes targeted emergency services and alerting systems. For instance, a ransomware attack in 2021 on the Colonial Pipeline indirectly impacted emergency alert systems by affecting the network infrastructure.
+   - **Exploitation**: Attackers encrypted critical systems and demanded ransom, which could delay or disrupt emergency communications. This highlights the broader implications of cybersecurity weaknesses in related infrastructure.
+
+5. **Public Safety Network Vulnerabilities**:
+   - **Incident**: In 2020, various vulnerabilities were discovered in the systems used by public safety organizations, including those that manage emergency communications.
+   - **Exploitation**: Researchers found that some systems lacked basic security measures, allowing unauthorized access and manipulation of emergency alerts. This could allow malicious actors to interfere with legitimate communications.
+
+These examples underscore the importance of maintaining robust security measures, regular audits, and training for personnel involved in emergency alert systems to prevent both accidental and malicious breaches.
+
+----------------------------------------------------------------------------------------------------
+📊 COMPARATIVE METRICS:
+----------------------------------------------------------------------------------------------------
+
+RELEVANCE TO EMERGENCY SYSTEMS:
+  Fine-tuned: 0.5933
+  Base:       0.5964
+  Winner:     Base ✅
+
+QUESTION DIRECTNESS:
+  Fine-tuned: 0.7702
+  Base:       0.7969
+  Winner:     Base ✅
+
+SPECIFICITY BREAKDOWN:
+  Fine-tuned: 63 items (Years: 8, Numbers: 13, Proper nouns: 42, URLs: 0)
+  Base:       48 items (Years: 5, Numbers: 10, Proper nouns: 33, URLs: 0)
+  Winner:     Fine-tuned ✅
+
+HALLUCINATION RISK ANALYSIS:
+  Fine-tuned: Risk=Low (0), Sources=Yes ✅, Hedging=0
+  Base:       Risk=High (3), Sources=No ❌, Hedging=3
+  Winner:     Fine-tuned ✅ (lower risk wins)
+
+RESPONSE LENGTH:
+  Fine-tuned: 2673 chars
+  Base:       2996 chars
+  Difference: 323 chars
+
+RESPONSE SIMILARITY: 0.9112
+
+
+====================================================================================================
+🏆 OVERALL ASSESSMENT
+====================================================================================================
+
+Category Winners:
+  Relevance:       Base (2/6 wins)
+  Directness:      Base (0/6 wins)
+  Specificity:     Fine-tuned (4/6 wins)
+  Lower Risk:      Base (2/6 wins)
+  Source Citation: Fine-tuned (3 vs 1)
+
+Overall Score:
+  Fine-tuned Model: 9 points
+  Base GPT-4o-mini: 16 points
+
+🏆 OVERALL WINNER: Base GPT-4o-mini
+
+Key Strengths:
+  ✅ Better topic relevance (0.5512 vs 0.5527)
+  ✅ Lower hallucination risk (2.50 vs 1.50)

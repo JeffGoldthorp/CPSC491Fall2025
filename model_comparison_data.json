@@ -1,0 +1,20 @@
+{
+  "base_model": {
+    "model": "gpt-4o-mini",
+    "responses": [],
+    "similarities_to_reference": [],
+    "similarities_to_prompt": [],
+    "avg_similarity_to_reference": 0.0,
+    "avg_similarity_to_prompt": 0.0,
+    "response_lengths": []
+  },
+  "finetuned_model": {
+    "model": "ft:gpt-3.5-turbo-1106:university-of-mary-washington::CIliXraB",
+    "responses": [],
+    "similarities_to_reference": [],
+    "similarities_to_prompt": [],
+    "avg_similarity_to_reference": 0.0,
+    "avg_similarity_to_prompt": 0.0,
+    "response_lengths": []
+  }
+}

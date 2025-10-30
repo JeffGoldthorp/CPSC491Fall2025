@@ -1,0 +1,26 @@
+================================================================================
+MODEL COMPARISON REPORT
+Topic: Emergency Alert Systems & Public Safety
+================================================================================
+
+SUMMARY STATISTICS
+--------------------------------------------------------------------------------
+Base Model: gpt-4o-mini
+  - Avg Similarity to Reference Topic: 0.0000
+  - Avg Similarity to Prompt: 0.0000
+  - Avg Response Length: nan chars
+
+Fine-tuned Model: ft:gpt-3.5-turbo-1106:university-of-mary-washington::CIliXraB
+  - Avg Similarity to Reference Topic: 0.0000
+  - Avg Similarity to Prompt: 0.0000
+  - Avg Response Length: nan chars
+
+WINNER ANALYSIS
+--------------------------------------------------------------------------------
+⚖️  Both models perform similarly on topic adherence
+⚖️  Both models perform similarly on prompt relevance
+
+================================================================================
+
+DETAILED PER-PROMPT COMPARISON
+================================================================================
