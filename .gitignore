@@ -1,8 +1,21 @@
-\venv 
+# Virtual environments (both .venv and venv naming conventions)
+.venv
+.venv/
+venv/
+env/
+
+# Environment files
 .env
+
+# Python cache
 __pycache__/
 *.pyc
 
 # Ignore Chroma DB storage (local vector DB files)
 chroma_fcc_storage/
 VectordB/chroma_fcc_storage/
+
+# Ignore vim swap files
+*.swp
+*.swo
+*~
