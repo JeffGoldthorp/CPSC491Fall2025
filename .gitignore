@@ -15,4 +15,41 @@ __pycache__/
 data/reviews_clean.json
 data/chunks.jsonl
 data/
+# secrets
+.env
+*.key
+
+# local venv
+.venv/
+__pycache__/
+*.pyc
+
+# generated data/artifacts
+data/reviews_raw.json
+data/reviews_clean.json
+data/reviews_chunks.json
+data/*.jsonl
+data/*.csv
+
+# optional: if you keep other big artifacts
+*.bak
+
+# secrets
+.env
+*.key
+
+# local venv
+.venv/
+__pycache__/
+*.pyc
+
+# generated data/artifacts
+data/reviews_raw.json
+data/reviews_clean.json
+data/reviews_chunks.json
+data/*.jsonl
+data/*.csv
+
+# optional: if you keep other big artifacts
+*.bak
 

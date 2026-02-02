@@ -370,7 +370,7 @@ def generate_grounded_response(
     query: str,
     top_k: int = 8,
     min_recurring_reviews: int = 2,
-    include_debug: bool = True,
+    include_debug: bool = False,
 ) -> Dict[str, Any]:
     openai_key = _env("OPENAI_API_KEY")
     model = os.getenv("OPENAI_MODEL", "gpt-4.1-mini")
