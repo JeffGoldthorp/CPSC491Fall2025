@@ -1,13 +1,5 @@
-[theme]
-base = "light"
-primaryColor = "#007BFF"       # Blue
-backgroundColor = "#FFFFFF"    # White
-secondaryBackgroundColor = "#E9F2FF"
-textColor = "#000000"
-font = "sans serif"
-
-
-[server]
+﻿[server]
 headless = true
 port = 8501
-enableCORS = false
+enableCORS = true
+enableXsrfProtection = true
