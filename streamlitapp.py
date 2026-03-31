@@ -1,17 +1,20 @@
-import streamlit as st
-from app.services.chat_service import answer_question
 from pathlib import Path
 import sys
 
 ROOT = Path(__file__).resolve().parent
-INNER_APP_PARENT = ROOT / "app"
+APP_PARENT = ROOT / "app"   # because your file is in repo root, and package is in app/app/
 
-if str(INNER_APP_PARENT) not in sys.path:
-    sys.path.insert(0, str(INNER_APP_PARENT))
+if str(APP_PARENT) not in sys.path:
+    sys.path.insert(0, str(APP_PARENT))
 
 import streamlit as st
 from app.services.chat_service import answer_question
-st.set_page_config(page_title="PSAP 911 Cyber Risk Assistant", page_icon="📞", layout="wide")
+
+st.set_page_config(
+    page_title="PSAP 911 Cyber Risk Assistant",
+    page_icon="📞",
+    layout="wide"
+)
 
 st.title("📞 PSAP 911 Cyber Risk Assistant")
 st.caption("RAG chatbot for 911 call centers using curated PDFs and web-enriched cybersecurity sources")
