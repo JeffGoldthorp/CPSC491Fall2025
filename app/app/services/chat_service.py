@@ -7,7 +7,6 @@ from app.config import settings
 from app.schemas import ChatMode, ChatResponse, Citation
 from app.services.retriever import retrieve
 from app.services.web_enrichment import external_search, fetch_full_text
-from app.services.chat_service import answer_question
 
 SYSTEM_PROMPT = (
     "You are a cybersecurity assistant for 911 call centers and PSAPs. "
