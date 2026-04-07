@@ -20,12 +20,15 @@ RAG_PROMPT = (
     "Prefer the indexed corpus first. "
     "If live web fallback excerpts are provided, treat them as secondary evidence. "
     "Cite claims inline using [1], [2], and so on. "
+    "Do not add any extra sections such as 'What the indexed evidence shows' or 'What the corpus doesn\'t explicitly list'. "
+    "Answer only from the evidence and do not speculate beyond it. "
     "If evidence is partial, say what is known and what is uncertain."
 )
 
 FT_PROMPT = (
     "Stay within PSAP, 911 operations, cyber risk, emergency communications, and public-safety policy. "
-    "If asked outside scope, state the scope limit clearly."
+    "If asked outside scope, state the scope limit clearly. "
+    "Do not invent analysis sections beyond the answer itself."
 )
 
 WEB_FALLBACK_MIN_RESULTS = 3
