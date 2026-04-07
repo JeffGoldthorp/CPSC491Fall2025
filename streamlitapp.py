@@ -40,12 +40,46 @@ st.sidebar.markdown("---")
 st.sidebar.write("**all** = curated PDFs + ingested web URLs")
 st.sidebar.write("Turn on live web fallback only when the indexed corpus is thin.")
 
+if st.sidebar.button("New chat"):
+    st.session_state.messages = []
+
 if "messages" not in st.session_state:
     st.session_state.messages = []
+
+
+def _render_citations(citations, expanded: bool = False):
+    if not citations:
+        return
+
+    with st.expander("Sources used", expanded=expanded):
+        st.caption("This answer is grounded in retrieved source excerpts. Page numbers are only available for documents with fixed pagination.")
+        for citation in citations:
+            page_display = "n/a"
+            if citation["page_start"] is not None and citation["page_end"] is not None:
+                page_display = f"{citation['page_start']}–{citation['page_end']}"
+            elif citation["page_start"] is not None:
+                page_display = str(citation["page_start"])
+            elif citation["page_end"] is not None:
+                page_display = str(citation["page_end"])
+
+            authority_display = citation.get("authority_level") or "unknown"
+            source_type = "Web" if citation.get("url") and str(citation.get("url")).startswith(("http://", "https://")) else "Document"
+            page_note = " (web sources have no page numbers)" if page_display == "n/a" else ""
+
+            st.markdown(
+                f"**[{citation['rank']}] {citation['title']}**  \n"
+                f"Source Type: `{source_type}`  \n"
+                f"Source ID: `{citation['source_id']}`  \n"
+                f"Pages: `{page_display}`{page_note}  \n"
+                f"Authority: `{authority_display}`  \n"
+                f"Score: `{citation.get('score')}`"
+            )
 
 for msg in st.session_state.messages:
     with st.chat_message(msg["role"]):
         st.markdown(msg["content"])
+        if msg["role"] == "assistant" and msg.get("citations"):
+            _render_citations(msg.get("citations"), expanded=False)
 
 question = st.chat_input("Ask a question about PSAP cybersecurity, NG911, incident response, or vendor risk...")
 
@@ -65,34 +99,12 @@ if question:
             )
 
             st.markdown(result.answer)
+            _render_citations([citation.dict() for citation in result.citations], expanded=True)
 
-            with st.expander("Sources used"):
-                st.caption("This answer is grounded in retrieved source excerpts. Page numbers are only available for documents with fixed pagination.")
-                if result.citations:
-                    for citation in result.citations:
-                        page_display = "n/a"
-                        if citation.page_start is not None and citation.page_end is not None:
-                            page_display = f"{citation.page_start}–{citation.page_end}"
-                        elif citation.page_start is not None:
-                            page_display = str(citation.page_start)
-                        elif citation.page_end is not None:
-                            page_display = str(citation.page_end)
-
-                        authority_display = citation.authority_level or "unknown"
-
-                        source_type = "Web" if citation.url and citation.url.startswith(("http://", "https://")) else "Document"
-
-                        page_note = " (web sources have no page numbers)" if page_display == "n/a" else ""
-
-                        st.markdown(
-                            f"**[{citation.rank}] {citation.title}**  \n"
-                            f"Source Type: `{source_type}`  \n"
-                            f"Source ID: `{citation.source_id}`  \n"
-                            f"Pages: `{page_display}`{page_note}  \n"
-                            f"Authority: `{authority_display}`  \n"
-                            f"Score: `{citation.score}`"
-                        )
-                else:
-                    st.write("No citations returned.")
-
-    st.session_state.messages.append({"role": "assistant", "content": result.answer})
+    st.session_state.messages.append(
+        {
+            "role": "assistant",
+            "content": result.answer,
+            "citations": [citation.dict() for citation in result.citations],
+        }
+    )
