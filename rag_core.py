@@ -35,20 +35,33 @@ def retrieve_chunks(query: str, top_k: int = TOP_K):
     q = embed_query(query)
     results = index.query(
         vector=q,
-        top_k=top_k,
+        top_k=top_k * 2,  # Fetch more to deduplicate by source
         include_metadata=True,
         namespace=PINECONE_NAMESPACE,
     )
     out = []
+    seen_sources = set()
+    
     for match in results.matches:
         md = match.metadata or {}
+        source = md.get("source", "")
+        
+        # Keep only the top-scoring result per unique source
+        if source in seen_sources:
+            continue
+        seen_sources.add(source)
+        
         out.append({
             "score": match.score,
             "title": md.get("title", "Unknown"),
-            "source": md.get("source", ""),
+            "source": source,
             "page": md.get("page"),
             "text": md.get("text", ""),
         })
+        
+        if len(out) >= top_k:
+            break
+    
     return out
 
 
