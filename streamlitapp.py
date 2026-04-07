@@ -67,13 +67,29 @@ if question:
             st.markdown(result.answer)
 
             with st.expander("Sources used"):
+                st.caption("This answer is grounded in retrieved source excerpts. Page numbers are only available for documents with fixed pagination.")
                 if result.citations:
                     for citation in result.citations:
+                        page_display = "n/a"
+                        if citation.page_start is not None and citation.page_end is not None:
+                            page_display = f"{citation.page_start}–{citation.page_end}"
+                        elif citation.page_start is not None:
+                            page_display = str(citation.page_start)
+                        elif citation.page_end is not None:
+                            page_display = str(citation.page_end)
+
+                        authority_display = citation.authority_level or "unknown"
+
+                        source_type = "Web" if citation.url and citation.url.startswith(("http://", "https://")) else "Document"
+
+                        page_note = " (web sources have no page numbers)" if page_display == "n/a" else ""
+
                         st.markdown(
                             f"**[{citation.rank}] {citation.title}**  \n"
+                            f"Source Type: `{source_type}`  \n"
                             f"Source ID: `{citation.source_id}`  \n"
-                            f"Pages: `{citation.page_start}`–`{citation.page_end}`  \n"
-                            f"Authority: `{citation.authority_level}`  \n"
+                            f"Pages: `{page_display}`{page_note}  \n"
+                            f"Authority: `{authority_display}`  \n"
                             f"Score: `{citation.score}`"
                         )
                 else:
