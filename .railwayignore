@@ -1,0 +1,11 @@
+scripts/
+archive/
+data/
+doc/
+docs/
+Testing .py files/
+VectordB/
+*.pyc
+__pycache__/
+.env
+.git/
